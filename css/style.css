@@ -1,0 +1,175 @@
+html {
+  height: 100%;
+}
+
+* {
+  color: white;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 400px;
+}
+
+#clock {
+  height: max-content;
+  font-size: 20vh;
+  color: white;
+  z-index: 1;
+  margin: 0;
+}
+
+form {
+  z-index: 1;
+}
+
+form input {
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  outline: none;
+  border-bottom: white solid;
+  width: 450px;
+  font-size: 27px;
+  text-align: center;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+.todo-form input {
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  outline: none;
+  border-bottom: white solid;
+  width: 420px;
+  font-size: 27px;
+  text-align: center;
+}
+
+/* img {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.greeting span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+/* footer .quotes {
+} */
+
+.header-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  /* margin: 0px 50px; */
+}
+
+.todo-div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  min-height: 200px;
+  max-height: 200px;
+  /* border: 1px solid white; */
+  /* overflow: hidden; */
+}
+
+button {
+  width: 120px;
+  background-color: transparent;
+  border-style: none;
+  /* border: 1px solid white; */
+  margin-top: 10px;
+  background-color: black;
+  font-size: 12px;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+.todo-list {
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.todo-list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid white; */
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 5px 0;
+  text-align: center;
+}
+
+li button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-style: none;
+  background-color: black;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: -3px;
+}
+
+.city {
+  padding-top: 20px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.city span {
+  margin-left: 10px;
+}
+
+.greeting div {
+  margin-bottom: -10px;
+}
