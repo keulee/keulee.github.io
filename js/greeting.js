@@ -81,6 +81,8 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
   nameForm.addEventListener("submit", handleSubmit);
+  greeting.addEventListener("mouseenter", handleMouseover);
+  greeting.addEventListener("mouseleave", handleMouseleave);
 } else {
   nameForm.hidden = true;
   todoForm.hidden = false;
