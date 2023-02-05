@@ -70,15 +70,15 @@ function handleSubmitTodo(event) {
 }
 
 function handleShowTodoBtn(event) {
+  //   console.log("clicked");
   event.preventDefault();
   const loadValue = localStorage.getItem(LIST_KEY);
-  //   if (isListOpen === true) {
-  if (loadValue === "true") {
+  if (isListOpen === true || loadValue === "true") {
     showTodoBtn.innerText = "Show Todo List";
     todoList.hidden = true;
     isListOpen = false;
     localStorage.setItem(LIST_KEY, isListOpen);
-  } else if (loadValue === "false") {
+  } else if (isListOpen === false || loadValue === "false") {
     showTodoBtn.innerText = "Hide Todo List";
     todoList.hidden = false;
     isListOpen = true;
@@ -94,6 +94,7 @@ showTodoBtn.addEventListener("click", handleShowTodoBtn);
 if (savedTodos !== null && savedTodos !== "[]") {
   const savedList = localStorage.getItem(LIST_KEY);
   if (savedList === "false") {
+    isListOpen = false;
     todoList.hidden = true;
     showTodoBtn.innerText = "Show Todo List";
   } else {
